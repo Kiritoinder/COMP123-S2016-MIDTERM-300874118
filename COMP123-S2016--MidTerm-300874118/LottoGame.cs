@@ -17,9 +17,21 @@ namespace COMP123_S2016__MidTerm_300874118
      */
     public abstract class LottoGame
     {
-        // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
         // CREATE private fields here --------------------------------------------
+
+        private List<int> _elementList;
+        private int _elementNumber;
+        private List<int> _numberList;
+        private int _setSize;
+
+        // Random number
+        Random _random = new Random(); // pseudo number object
+
+
+        // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
         // PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -51,6 +63,18 @@ namespace COMP123_S2016__MidTerm_300874118
 
             // call the _build method
             this._build();
+        }
+
+        public int ElementNumber
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
         }
 
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
