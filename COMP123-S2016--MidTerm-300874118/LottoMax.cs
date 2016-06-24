@@ -25,9 +25,15 @@ namespace COMP123_S2016__MidTerm_300874118
         public LottoMax()
             : base(7, 49)
         {
-
+        }
+             public void GenerateLottonNumbers()
+        {
+            throw new System.NotImplementedException();
         }
 
-        // CREATE the public GenerateLottoNumbers method here ----------------
-    }
+
+    
+
+    // CREATE the public GenerateLottoNumbers method here ----------------
+}
 }

@@ -30,6 +30,11 @@ namespace COMP123_S2016__MidTerm_300874118
         {
 
         }
+        public void GenerateLottoNumbers()
+        {
+            throw new System.NotImplementedException();
+        }
+
 
         // CREATE the public GenerateLottoNumbers method here ----------------
     }

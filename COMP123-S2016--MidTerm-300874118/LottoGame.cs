@@ -21,19 +21,79 @@ namespace COMP123_S2016__MidTerm_300874118
 
         // CREATE private fields here --------------------------------------------
 
+
+        // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         private List<int> _elementList;
         private int _elementNumber;
         private List<int> _numberList;
+        private Random _random;
         private int _setSize;
 
-        // Random number
-        Random _random = new Random(); // pseudo number object
-
-
-        // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
         // PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        public List<int> ElementList
+        {
+            get
+            {
+                return this._elementList;
+            }
+
+            set
+            {
+                this._elementList = value;
+            }
+        }
+
+        public int ElementNumber
+        {
+            get
+            {
+                return this._elementNumber;
+            }
+
+            set
+            {
+                this._elementNumber = value;
+            }
+        }
+
+        public List<int> NumberList
+        {
+            get
+            {
+                return this._numberList;
+            }
+
+            set
+            {
+                this._numberList = value;
+            }
+        }
+
+        public Random random
+        {
+            get
+            {
+                return this._random;
+            }
+
+            set
+            {
+                this.random = value;
+            }
+        }
+
+        public int SetSize
+        {
+            get
+            {
+                return this._setSize;
+            }
+
+            set
+            {
+                this._setSize = value;
+            }
+        }
 
         // CREATE public properties here -----------------------------------------
 
@@ -65,20 +125,30 @@ namespace COMP123_S2016__MidTerm_300874118
             this._build();
         }
 
-        public int ElementNumber
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
+
+        // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        private void _build()
+        {
+
+           
+
+            for (int i = 1; i < SetSize; i++)
             {
+                NumberList.Add
+
             }
         }
 
-        // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        private void _initialize()
+        {
+            throw new System.NotImplementedException();
+        }
 
+        private void PickElements()
+        {
+            throw new System.NotImplementedException();
+        }
         // CREATE the private _initialize method here -----------------------------
 
         // CREATE the private _build method here -----------------------------------
@@ -111,7 +181,11 @@ namespace COMP123_S2016__MidTerm_300874118
         }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+       public void GenerateLottoNumbers();
+        {
 
-        // CREATE the public PickElements method here ----------------------------
-    }
+
+        }
+    // CREATE the public PickElements method here ----------------------------
+}
 }
